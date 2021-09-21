@@ -1,5 +1,5 @@
 import React, {useState} from 'react'
-
+// import usestate hook from react
 const App = () => {
     
 const [count, setCount] = useState(0);
