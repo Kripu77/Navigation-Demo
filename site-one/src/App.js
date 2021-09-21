@@ -17,7 +17,7 @@ const [count, setCount] = useState(0);
         }>
                 
                 
-                Increase</button>
+                Increase count</button>
 
 
 
@@ -26,7 +26,7 @@ const [count, setCount] = useState(0);
                 alert("you have reached the lowest value as possible")
             }
             else{
-            setCount(count-1)}}}>Decrease</button>
+            setCount(count-1)}}}>Decrease count</button>
        
         </div>
     )
