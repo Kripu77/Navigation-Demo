@@ -54,7 +54,7 @@ text-shadow: 1px 1px 3px black;
     display: none;
 }
 .show-container{
-    display: block;
+    display: none;
     height: auto;
 }
 .link{
@@ -100,5 +100,11 @@ svg:hover{
     }
     .social-icons{
         display: none;
+        height: auto;
+        transition: 0.3s all ease-in-out;
     }
+    .show-container {
+        display: block;
+        height: auto;}
+
 }

@@ -4,6 +4,17 @@ import { AiFillFacebook, AiFillInstagram, AiFillTwitterCircle } from "react-icon
 
 const Navbar = () => {
     const [navVisible, setNavVisible]= useState(false)
+    const[width, setWidth] = useState(window.innerWidth)
+     
+    
+      useEffect(()=>{
+          if(window.innerWidth>800){
+              setNavVisible(false)
+
+          }
+      },[width])
+      
+
     return (
         <nav>
             <div className='nav-center'>
@@ -23,6 +34,7 @@ const Navbar = () => {
                            <li className='link'> Careers</li>
                                <li className='link'> Projects</li>
                                    <li className='link'>Contact</li>
+                                    
 
                 </div>
                
