@@ -20,6 +20,7 @@ useEffect(()=>{
     window.addEventListener('resize', checkWidth)
   if(width>800){
     setNavVisible(false);}
+    //clean up function
     return ()=>{window.removeEventListener('resize', checkWidth)}
   
 
