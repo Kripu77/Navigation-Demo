@@ -87,6 +87,8 @@ svg:hover{
     color: #3982b6;
     transition: 0.5s all ease-in-out;
     cursor: pointer;
+      transform: rotate(360deg);
+      
 }
 
 
@@ -97,14 +99,21 @@ svg:hover{
     }
     .nav-toggle{
         display: block;
+     
+      
+    }
+    .nav-toggle:active{
+           transform: rotate(90deg);
     }
     .social-icons{
         display: none;
         height: auto;
-        transition: 0.3s all ease-in-out;
+     
     }
     .show-container {
         display: block;
-        height: auto;}
+        height: auto;
+       transition: 0.3s all ease-in-out;
+       }
 
 }
