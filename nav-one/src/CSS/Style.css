@@ -53,6 +53,10 @@ text-shadow: 1px 1px 3px black;
 .nav-toggle{
     display: none;
 }
+.show-container{
+    display: block;
+    height: auto;
+}
 .link{
     padding: 2rem 1rem;
     
