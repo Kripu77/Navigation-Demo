@@ -1,5 +1,6 @@
 import React, {useState, useEffect, useRef} from 'react'
 import {FaBars, FaTwitter} from 'react-icons/fa'
+import { AiFillFacebook, AiFillInstagram, AiFillTwitterCircle } from "react-icons/ai";
 
 const Navbar = () => {
     return (
@@ -9,23 +10,19 @@ const Navbar = () => {
 <h1 className='nav-heading'>Kripu <span> Khadka</span></h1>
 <button className='nav-toggle'><FaBars/></button>
  <ul className='social-icons'>
-                    <li>Facebook</li>
-                    <li>Instagram</li>
-                    <li>Twitter</li>
+                    <li className='icons'><AiFillFacebook/></li>
+                    <li className='icons'><AiFillInstagram/></li>
+                    <li className='icons'><AiFillTwitterCircle/></li>
                 </ul>
 
                 </div>
                 <div className='links-container show-container'>
-                    <p> Home
-                    </p>
-                    <p> About
-                    </p>
-                    <p> Careers
-                    </p>
-                    <p>
-                        Projects
-                    </p>
-                    <p>Contact</p>
+                   <li className='link'> Home</li>
+                       <li className='link'>About</li>
+                           <li className='link'> Careers</li>
+                               <li className='link'> Projects</li>
+                                   <li className='link'>Contact</li>
+
                 </div>
                
             </div>
