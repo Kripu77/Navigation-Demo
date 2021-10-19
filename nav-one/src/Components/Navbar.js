@@ -5,15 +5,27 @@ import { AiFillFacebook, AiFillInstagram, AiFillTwitterCircle } from "react-icon
 const Navbar = () => {
     const [navVisible, setNavVisible]= useState(false)
     const[width, setWidth] = useState(window.innerWidth)
-     
-    
-      useEffect(()=>{
-          if(window.innerWidth>800){
-              setNavVisible(false)
 
-          }
-      },[width])
-      
+const checkWidth = ()=>{
+    setWidth(window.innerWidth);
+}
+
+
+
+// it is important to check the width and resize as the nav toggle when resized is still staying on block view\
+// hence if we check the width and toggle it only when width changes over 800px it solves the problem
+
+useEffect(()=>{
+
+    window.addEventListener('resize', checkWidth)
+  if(width>800){
+    setNavVisible(false);}
+    return ()=>{window.removeEventListener('resize', checkWidth)}
+  
+
+},[width])
+  
+   
 
     return (
         <nav>
