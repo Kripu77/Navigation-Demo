@@ -2,10 +2,15 @@ import React,{useState} from 'react'
 import "./Style.css"
 import {FiAlignJustify } from "react-icons/fi"
 import Container from './Components/Container'
+import Modal from './Components/ModalX'
+import ModalX from './Components/ModalX'
 
 const App = () => {
         const[visible, setVisible] = useState(false)
     return (
+        <main>
+
+       
         <div>
         
            <div className='main-container'>
@@ -21,8 +26,11 @@ const App = () => {
 
 
            </div>
-           <h1> Hi guys</h1>
+        
         </div>
+
+        <ModalX/>
+         </main>
     )
 }
 
