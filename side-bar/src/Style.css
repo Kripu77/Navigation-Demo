@@ -24,21 +24,41 @@ svg:hover{
     top: 0;
     background-color: white;
      z-index: 1;
-    width: 350px;
+    width: 450px;
     height: 100vh;
-     overflow-x: hidden;
-      transition: 0.5s;
+
+      transition: all 0.3s ease-in-out ;
 }
 
 .details{
     display: flex;
     justify-content: space-between;
+    margin-bottom: 6rem;
 }
 
 h1{
     font-family: cursive;
 }
 .hide{
-position: absolute;
-margin-left: -400px
+ height: 100%;
+ /* 100% Full-height */
+ width: 0;
+ /* 0 width - change this with JavaScript */
+ position: fixed;
+ /* Stay in place */
+ z-index: 1;
+ /* Stay on top */
+ top: 0;
+ /* Stay at the top */
+ left: 0;
+ background-color: #111;
+ /* Black*/
+ overflow-x:hidden;
+ /* Disable horizontal scroll */
+
+ /* Place content 60px from the top */
+ 
+ padding: 0;
+ /* 0.5 second transition effect to slide in the sidenav */
+
 }

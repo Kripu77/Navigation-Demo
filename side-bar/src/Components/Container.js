@@ -1,6 +1,7 @@
 import React,{useState} from 'react'
 import {data} from "../Components/data";
 import { GiAbstract031 } from "react-icons/gi";
+import {test} from "../test.PNG"
 
 const Container = ({setVisible}) => {
 
