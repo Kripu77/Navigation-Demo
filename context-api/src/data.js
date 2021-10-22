@@ -6,20 +6,24 @@ export const data = [
     id: 1,
     name: <AiFillFacebook />,
     url: "https://www.facebook.com/kripu.khadka/",
+    valuex: "FaceBook",
   },
   {
     id: 2,
     name: <CgWebsite />,
     url: "https://kripu-khadka.netlify.app/",
+    valuex: "Portfolio",
   },
   {
     id: 3,
     name: <BsLinkedin />,
     url: "https://www.linkedin.com/in/kripu-khadka-3594a7185/",
+    valuex: "LinkedIn",
   },
   {
     id: 4,
     name: <AiFillGithub />,
     url: "https://www.instagram.com/kripu77/",
+    valuex: "GitHub",
   },
 ];

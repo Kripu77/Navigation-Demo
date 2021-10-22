@@ -14,9 +14,10 @@ const Sidebar = () => {
            
             {
                 data.map((value)=>{
-                    const {id, url, name}= value;
+                    const {id, url, name, valuex}= value;
                     return <div key={id} className='list-items'>
                      <a href={url}> {name}</a>
+                     <h5>{valuex}</h5>
                     </div>
 
                 })
