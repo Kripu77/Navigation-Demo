@@ -1,12 +1,16 @@
 import React,{useContext} from 'react'
 import{FaBars} from 'react-icons/fa'
+//pass in the context value
 import { useGlobalContext } from './Context';
+
+
 const Home = () => {
-    const {isModalOpen} = useGlobalContext();
+const data = useGlobalContext();
+console.log(data);
 
     return (
       <main>
-        <button className="sidebar-toggle" onClick={()=>isModalOpen}>
+        <button className="sidebar-toggle">
           <FaBars />
         </button>
         <div>
