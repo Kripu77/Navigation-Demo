@@ -1,22 +1,47 @@
 
+import React,{useContext, useState} from 'react'
 
-import React,{useContext} from 'react'
+//create a context
+
 export const mainContextProvider = React.createContext();
-// we will pass oour components via our children prop
 
-const ContextMain = ({children}) => {
+const MainContext = ({children}) => {
+
+//we will set state for our actions that we want to happen
+
+const [isModalOpen, setIsModalOpen]= useState(false);
+const [isSideBarOpen, setIsSideBarOpen]= useState(false);
+
+const modalOpen = ()=>{
+    return setIsModalOpen(true);
+
+}
+
+const modalClose = ()=>{
+    return setIsModalOpen(false);
+
+}
+
+const sideBarOpen = ()=>{
+    return setIsSideBarOpen(!isSideBarOpen);
+}
+
+const sideBarClose = ()=>{
+    return setIsSideBarOpen(false)
+}
     return (
         <div>
-            <mainContextProvider.Provider value={'hello'}>
+            <mainContextProvider.Provider value={{isModalOpen, isSideBarOpen, modalClose, modalOpen, sideBarOpen, sideBarClose}}>
                 {children}
             </mainContextProvider.Provider>
+            
         </div>
     )
 }
 
-//custom hook can be used which will enable us reducing importing useContext hook oftend
-export const useGlobalContext = ()=>{
-    return useContext(mainContextProvider)
-}
+//custom hook
 
-export default ContextMain;
+export const useMainContext = ()=>{
+    return useContext(mainContextProvider);
+}
+export default MainContext

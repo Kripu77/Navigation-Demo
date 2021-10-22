@@ -1,20 +1,23 @@
 import React,{useContext} from 'react'
 import{FaBars} from 'react-icons/fa'
 //pass in the context value
-import { useGlobalContext } from './Context';
+ import { useMainContext } from './Context';
 
 
 const Home = () => {
-const data = useGlobalContext();
-console.log(data);
-
+const data = useMainContext();
+//destructure it
+const{
+    isModalOpen, isSiderBarOpen, sideBarClose, sideBarOpen
+} = data;
+console.log(data)
     return (
       <main>
-        <button className="sidebar-toggle">
+        <button className="sidebar-toggle" onClick={()=>sideBarOpen()}>
           <FaBars />
         </button>
         <div>
-          <button className="modal-btn"> Show Modal</button>
+        
         </div>
       </main>
     );

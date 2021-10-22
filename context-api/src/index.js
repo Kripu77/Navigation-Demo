@@ -1,14 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
-import  ContextMain from "./Components/Context"
+import MainContext from "./Components/Context"
 
-//wrap the  context function with the main app component
+//wrap the  context function with the
 ReactDOM.render(
   <React.StrictMode>
-    <ContextMain>
+    <MainContext>
       <App />
-</ContextMain>
+    </MainContext>
   </React.StrictMode>,
 
   document.getElementById("root")
