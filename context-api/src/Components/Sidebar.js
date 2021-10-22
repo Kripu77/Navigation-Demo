@@ -4,7 +4,7 @@ import { FaTimes } from 'react-icons/fa'
 
 const Sidebar = () => {
     return (
-        <div className='sidebar'>
+        <div className='sidebar-hidden'>
             <div  className='sidebar-container'>
                <h1> Kripu Khadka</h1> 
                {/* sidebar close button */}
