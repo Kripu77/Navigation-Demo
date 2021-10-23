@@ -12,6 +12,8 @@ const MainContext = ({children}) => {
 const [isModalOpen, setIsModalOpen]= useState(false);
 const [isSideBarOpen, setIsSideBarOpen]= useState(false);
 
+
+//fn's for changing state
 const modalOpen = ()=>{
     return setIsModalOpen(true);
 
