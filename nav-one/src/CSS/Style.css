@@ -16,26 +16,40 @@ body{
 span{
     color: #49a6e9;
 }
+
 nav{
     background-color: white;
     height: auto;
-    padding: 1.5rem;
-    transition: 0.3s all ease-in-out;
+
 
 }
 
 .nav-header{
     display: flex;
     justify-content: space-between;
-    max-height: 15vh;
-     transition: 0.3s all ease-in-out;
+    max-height: 30vh;
+  
+         padding: 0.5rem;
 }
 .nav-heading{
 text-shadow: 1px 1px 3px black;
 
  margin: 1vh 0 0 0vh;
  height: auto;
-  transition: 0.3s all ease-in-out;
+
+} 
+.nav-heading:hover{
+    color:#49a6e9;
+    transition: 0.3s all ease-in-out;
+}
+li:hover{
+
+  border-bottom: 3px solid #49a6e9
+   
+    
+}
+li{
+    border-bottom: 3px solid transparent
 }
 .nav-toggle{
  margin: 2vh 2vh 0 0;
@@ -52,13 +66,16 @@ text-shadow: 1px 1px 3px black;
     display: flex;
     justify-content: center;
     margin-top: -4.3rem;
+    
 }
 .nav-toggle{
     display: none;
 }
 .show-container{
+
     display: none;
     height: auto;
+
      transition: 0.3s all ease-in-out;
 }
 .link{
@@ -108,7 +125,7 @@ svg:hover{
      
       
     }
-    .nav-toggle:active{
+    .nav-toggle:active, .nav-toggle:hover{
            transform: rotate(90deg);
     }
     .social-icons{
@@ -118,8 +135,18 @@ svg:hover{
     }
     .show-container {
         display: block;
-        height: auto;
-       transition: 0.3s all ease-in-out;
+    
+       
+        margin-bottom: 80px;
+        transition-property: margin-bottom;
+        transition-duration: 2s;
+        transition-timing-function: ease-in-out;
+        transition-delay: 0.8s;
+       /* transition: 0.3s all; */
+       }
+       .nav-center{
+         
+           transition: 0.3s all ease-in-out;
        }
 
 }
