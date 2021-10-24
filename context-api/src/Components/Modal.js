@@ -3,6 +3,7 @@ import Modal from "react-modal";
 import { FaTimes } from "react-icons/fa";
 Modal.setAppElement("#root");
 import { useMainContext } from "./Context";
+// custom hook used
 const ModalX = () => {
 const modal = useMainContext();
     const{isModalOpen, modalClose, modalOpen} = modal
