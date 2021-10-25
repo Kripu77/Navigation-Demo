@@ -6,9 +6,8 @@ import MainContext from "./Components/Context"
 //wrap the  context function with the
 ReactDOM.render(
   <React.StrictMode>
-    <MainContext>
-      <App />
-    </MainContext>
+    <MainContext children={<App/>} />
+     
   </React.StrictMode>,
 
   document.getElementById("root")
