@@ -13,9 +13,14 @@ body{
     font-family: monospace;
 }
 
-.wrapper{
-    display: flex;
-    justify-content: space-between;
-  flex-wrap: wrap;
-}
 
+
+.nav-container, .wrapper{
+        display: flex;
+        justify-content: space-between;
+    position: fixed;
+    top: 0;
+    background-color: white;
+    width: 600px;
+    height: 100%;
+}
