@@ -15,12 +15,41 @@ body{
 
 
 
-.nav-container, .wrapper{
-        display: flex;
-        justify-content: space-between;
+.wrapper{
+
     position: fixed;
     top: 0;
     background-color: white;
     width: 600px;
     height: 100%;
+    transition: all 0.3s ease-in-out;
 }
+
+.nav-container{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 90px;
+}
+
+.nav-social{
+    margin-left: 150px;
+ }
+
+ .Modal-toggler{
+     margin-top: 40vh;
+     margin-left: 50vw;
+     outline: 1px solid orange;
+     border: none;
+     font-family: monospace;
+     color: orangered;
+     cursor: pointer;
+     background-color: transparent;
+ }
+
+ .hidden{
+position: fixed;
+top: 0;
+margin-left: -700px;
+overflow: hidden;
+transition: all 0.3s ease-in-out;
+ }

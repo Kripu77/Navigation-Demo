@@ -13,12 +13,12 @@ export const data = [
   },
   {
     url: "redhat.com",
-    id: 1,
+    id: 3,
     name: <FaRedhat/>,
   },
   {
     url: "salesforce.com",
-    id: 1,
+    id: 4,
     name: <FaSalesforce/>,
   },
 ];

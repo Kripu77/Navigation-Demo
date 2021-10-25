@@ -1,35 +1,31 @@
 import React ,{useState}from 'react'
-import { data } from './data'
+
 import Header from './Header';
-import { FaAffiliatetheme } from "react-icons/fa";
+import { FaAffiliatetheme, FaBars } from "react-icons/fa";
+import { useNavModalContext } from './context';
+import data  from "./data";
+import Navlinks from './Navlinks';
+
 
 const Navbar = () => {
+    const data = useNavModalContext();
+    const{isSideBarOpen, sideBarToggler} = data;
+    console.log(data)
 
-    const [navData, setNavData] = useState(data)
+  
     return (
       <main>
-        <Header />
-        <div className="wrapper">
+<h1> Kripu Khadka</h1>
+<FaBars onClick={()=>sideBarToggler()}/>
+        <div className={isSideBarOpen? "wrapper" : "hidden"}>
+   
+
           <div className="nav-container">
             <h1> Kripu Khadka</h1>
 
-            <FaAffiliatetheme />
+            <FaAffiliatetheme onClick={()=>sideBarToggler()}/>
           </div>
-          <div className="nav-links">
-            <div className="nav-social">
-              {navData.map((value) => {
-                const { url, id, name } = value;
-                return (
-                  <div key={id}>
-                    <a href={url} alt={name}>
-                      {" "}
-                      {name}
-                    </a>{" "}
-                  </div>
-                );
-              })}
-            </div>
-          </div>
+          <Navlinks/>
         </div>
       </main>
     );
